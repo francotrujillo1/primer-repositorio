@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--inicio de style css-->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>proyecto</title>
 </head>
 <body>
@@ -30,15 +31,15 @@
 
         <div class="container">
            <h2>Testimonios</h2>    
-            <div class="carta">
+            <div data-aos="zoom-in" class="carta">
                 <h3>Daniel</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem suscipit ullam facilis natus soluta ad vitae eaque obcaecati consectetur, illo aliquid ea in expedita architecto voluptates. Autem fuga libero modi.</p>
             </div>
-            <div class="carta">
+            <div data-aos="zoom-in" class="carta">
                 <h3>Lorena</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem suscipit ullam facilis natus soluta ad vitae eaque obcaecati consectetur, illo aliquid ea in expedita architecto voluptates. Autem fuga libero modi.</p>
             </div>
-            <div class="carta">
+            <div data-aos="zoom-in" class="carta">
                 <h3>Mauro</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem suscipit ullam facilis natus soluta ad vitae eaque obcaecati consectetur, illo aliquid ea in expedita architecto voluptates. Autem fuga libero modi.</p>
             </div>
@@ -53,9 +54,9 @@
     <section id="galeria">
           <h2>Galeria</h2>
             <div class="containerf">
-               <img src="media/2021-10-25 (1).jpg" alt="">
-               <img src="media/foto 1.jpg" alt="">
-               <img src="media/hidraulica.jpg" alt="">
+               <img data-aos="zoom-in" src="media/2021-10-25 (1).jpg" alt="">
+               <img data-aos="zoom-in" src="media/foto 1.jpg" alt="">
+               <img data-aos="zoom-in" src="media/hidraulica.jpg" alt="">
             </div>
     </section>
 
@@ -83,5 +84,9 @@
             </ul>
           </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
