@@ -63,6 +63,10 @@ header nav{
      text-align: center;
      padding-bottom: 25px;
 }
+#hero a{
+    text-decoration: none;
+    color: white;
+}
 
 header a{
     padding: 5px 12px;
@@ -81,15 +85,17 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90wh;
+    height: 90vh;
     background-image: url(../media/mangueras.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     
 }
 
 #hero h1{
     color: white;
+    font-weight: bold
 }
 
 #sobreNosotros{
@@ -135,9 +141,8 @@ header a:hover{
 
 
 iframe{
+    display: flex;
     width: 100%;
-    margin-top: 10px;
-    margin: 30px;
     
 }
 
@@ -147,7 +152,15 @@ iframe{
 }
 
 @media(min-width:720px){ 
+    header{
+        position: fixed;
+        width: 100%;
+    }
 
+    #hero h1{
+        font-size: 5em;
+        font-weight: bold
+    }
 
     header .container{
         flex-direction:row;
@@ -161,14 +174,13 @@ iframe{
     }
 
     .containerf{
-        width: 620px;
+        width: 100%;
         display: flex;
     }
   
     .mapa{
         width: 50%;
-        position: relative;
-        left: 500px;
+        margin: 50px 500px;
     }
 
     .nosotros{ 
@@ -185,8 +197,10 @@ iframe{
 
     .div2 { grid-area: 1 / 2 / 2 / 3; }
 
-
-
-
-
-}
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+    }
