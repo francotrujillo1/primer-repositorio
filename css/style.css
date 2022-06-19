@@ -1,206 +1,173 @@
-*{
-    box-sizing: border-box;
-}
+* {
+  box-sizing: border-box; }
 
-html{
-    scroll-behavior: smooth;
-}
+html {
+  scroll-behavior: smooth; }
 
-body{
-    font-family: "Roboto" , sans-serif;
-    margin: 0;
-}
+body {
+  font-family: "Roboto" , sans-serif;
+  margin: 0;
+  background-color: #feffea; }
 
-h1{ font-size: 3.5em;}
-h3{ font-size: 2em;}
-h2{font-size: 2.7em;}
-p{font-size: 1.25em;}
-ul{list-style: none;}
-li{font-size: 1.7em;}
+h1 {
+  font-size: 3.5em; }
 
-button{
-    font-size: 1.25em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: blue;
-}
+h3 {
+  font-size: 2em; }
 
-button:hover{
-    background-color: rgb(49, 11, 85);
-}
+h2 {
+  font-size: 2.7em; }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
+p {
+  font-size: 1.25em; }
 
-header{
-    background-color: rgb(202, 202, 202)
-}
+ul {
+  list-style: none; }
 
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: blue;
-    font-size: 1.6em;
+li {
+  font-size: 1.7em; }
 
-}
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blue; }
 
-header .container{
-      display: flex;
-      flex-direction: column;
-      align-items: center;    
-}
+button:hover {
+  background-color: #310b55; }
 
-header nav{
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     padding-bottom: 25px;
-}
-#hero a{
-    text-decoration: none;
-    color: white;
-}
+.container {
+  max-width: 1400px;
+  margin: auto; }
 
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
+header {
+  background-color: #cacaca; }
 
-header a:hover{
-    color: blueviolet;
-}
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blue;
+  font-size: 1.6em; }
 
-#hero{
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px; }
+
+#hero a {
+  text-decoration: none;
+  color: white; }
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black; }
+
+header a:hover {
+  color: blueviolet; }
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: url(../media/mangueras.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#hero h1 {
+  color: white;
+  font-weight: bold; }
+
+#sobreNosotros {
+  text-align: center;
+  padding: 200px 12px; }
+
+#testimonios {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center; }
+
+#testimonios .container {
+  padding: 100px 12px; }
+
+#testimonios h2 {
+  margin-top: 0;
+  font-size: 3.2em; }
+
+#testimonios .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 10px 0px;
+  margin: 30px;
+  border-radius: 15px;
+  background-color: #380568; }
+
+#galeria h2 {
+  text-align: center; }
+
+.containerf img {
+  width: 100%; }
+
+.div1 img {
+  width: 100%; }
+
+iframe {
+  display: flex;
+  width: 100%; }
+
+.informacion {
+  text-align: center; }
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%; }
+  #hero h1 {
+    font-size: 5em;
+    font-weight: bold; }
+  header .container {
+    flex-direction: row;
+    justify-content: space-between; }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px; }
+  .containerf {
+    width: 100%;
+    display: flex; }
+  .mapa {
+    width: 50%;
+    margin: 50px 500px; }
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 38px;
+    grid-row-gap: 0px; }
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2; }
+  .div1 img {
+    width: 100%; }
+  .div2 {
+    grid-area: 1 / 2 / 2 / 3; }
+  ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: url(../media/mangueras.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-}
-
-#hero h1{
-    color: white;
-    font-weight: bold
-}
-
-#sobreNosotros{
-    text-align: center;
-    padding: 200px 12px;
-}
-
-#testimonios{
-    background-color: rgb( 30, 30, 30);
-    color: white;
-    text-align: center;
-}
-
-#testimonios .container{
-       padding: 100px 12px;  
-}
-
-#testimonios h2{
-    margin-top: 0;
-    font-size: 3.2em;  
-}
-
-#testimonios .carta{
-   background-position: center center;
-   background-size: cover;
-   padding: 10px 0px;
-   margin: 30px;
-   border-radius: 15px;
-   background-color: rgb(56, 5, 104);
-}
-
-#galeria h2{
-    text-align: center;
-}
-
-.containerf img{
-    width: 100%;
-}
-
-.div1 img{
-    width: 100%;
-}
-
-
-iframe{
-    display: flex;
-    width: 100%;
-    
-}
-
-.informacion{
-    text-align: center;
-    
-}
-
-@media(min-width:720px){ 
-    header{
-        position: fixed;
-        width: 100%;
-    }
-
-    #hero h1{
-        font-size: 5em;
-        font-weight: bold
-    }
-
-    header .container{
-        flex-direction:row;
-        justify-content: space-between;
-    }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    .containerf{
-        width: 100%;
-        display: flex;
-    }
-  
-    .mapa{
-        width: 50%;
-        margin: 50px 500px;
-    }
-
-    .nosotros{ 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 38px;
-        grid-row-gap: 0px;
-   
-    }
-
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div1 img{width: 100%;}
-
-    .div2 { grid-area: 1 / 2 / 2 / 3; }
-
-    ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: center;
-    }
-    }
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center; } }
