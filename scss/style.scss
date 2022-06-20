@@ -1,3 +1,17 @@
+$bgbutton:#0000ff;
+$text:#ffffff;
+
+@mixin stylebutton($bg,$color) {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: $color;
+    background-color: $bg;
+}
+
 
 *{
     box-sizing: border-box;
@@ -21,14 +35,7 @@ ul{list-style: none;}
 li{font-size: 1.7em;}
 
 button{
-    font-size: 1.25em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: blue;
+    @include stylebutton($bgbutton,$text)
 }
 
 button:hover{
