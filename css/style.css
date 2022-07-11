@@ -102,6 +102,9 @@ header a:hover {
   background-color: #1e1e1e;
   color: white;
   text-align: center; }
+  #testimonios a {
+    text-decoration: none;
+    color: white; }
 
 #testimonios .container {
   padding: 100px 12px; }
@@ -133,6 +136,10 @@ iframe {
 
 .informacion {
   text-align: center; }
+
+#pie a {
+  text-decoration: none;
+  color: white; }
 
 @media (min-width: 720px) {
   header {
